@@ -487,6 +487,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#build-app">Appendix C: Using the Codename One Build App</a></li>
+<li><a href="#api">Appendix D: API</a>
+<ul class="sectlevel2">
+<li><a href="#_limitations">Limitations</a></li>
+<li><a href="#_kotlin_api_support">Kotlin API Support</a></li>
+<li><a href="#_add_on_libraries">Add-on Libraries</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -495,6 +502,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Kotlin App Template is a maven starter project for building a cross-platform, native mobile app in Kotlin, using <a href="https://www.codenameone.com">Codename One</a>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+This project uses Kotlin as the main app programming language.  If you would prefer to use Java, check out the <a href="https://shannah.github.io/cn1-maven-archetypes/cn1app-archetype-tutorial/getting-started.html#generating-new-project">Bare-bones Java App template</a>.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p><strong>Features of this project</strong></p>
@@ -857,7 +876,7 @@ drwxr-xr-x   4 shannah  staff   128 Feb 23 06:35 win</code></pre>
 <h5 id="_intellij">IntelliJ</h5>
 <env intellij></env>
 <div class="paragraph">
-<p>When you open the project in IntelliJ IDEA, the project inspector will lookw like the this.</p>
+<p>When you open the project in IntelliJ IDEA, the project inspector will look like the this.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -973,6 +992,18 @@ All of the Codename One build options are defined ONLY on the root module.  If y
 <div class="sect1">
 <h2 id="_editing_kotlin_code">Editing Kotlin Code</h2>
 <div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+In this section we jump right into the code without explaining what APIs are available.  See <a href="#api">API</a> for an overview of the supported APIs.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>In order to demonstrate how to make this project your own, let&#8217;s begin by making a button that actually does something.</p>
 </div>
@@ -1294,6 +1325,9 @@ JavaSE desktop builds are built locally, and do not require any special developm
 <p><a href="#ios-server-builds">Using the Codename One Build Server</a></p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>The recommended approach is to use the <a href="#ios-server-builds">build server</a> as it doesn&#8217;t require you to install any special development tools on your computer beyond the standard JDK.</p>
 </div>
 <div class="sect3">
 <h4 id="ios-local-builds">Building Locally</h4>
@@ -2051,6 +2085,12 @@ Before you can submit a UWP build you need to create a certificate, and <strong>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_advanced_uwp_options">Advanced UWP Options</h4>
+<div class="paragraph">
+<p>For more information about UWP builds see <a href="https://www.codenameone.com/developer-guide.html#_working_with_uwp">Working with UWP</a> in the Developer guide.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="javascript">Javascript Builds</h3>
@@ -2144,6 +2184,12 @@ Javascript builds are available to Codename One Enterprise subscribers.  See <a 
 <div class="paragraph">
 <p>After you submit the build, you can follow the progress on the Codename One build server.  See <a href="#build-app">Using the Codename One Build App</a>.</p>
 </div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_advanced_javascript_options">Advanced Javascript Options</h4>
+<div class="paragraph">
+<p>For more information about Javascript builds see <a href="https://www.codenameone.com/developer-guide.html#_working_with_javascript">Working with Javascript</a> in the Developer guide.</p>
 </div>
 </div>
 </div>
@@ -2386,10 +2432,77 @@ Yes, I see the "typo" in the word "Regenrate".  Screenshots are just a pain to <
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="api">Appendix D: API</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+This section is not a comprehensive treatment of the Codename One API.  For a more in-depth discussion of Codename One and it&#8217;s supported APIs, refer to the <a href="https://www.codenameone.com/developer-guide.html">Developer Guide</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Codename One apps support a subset of the JavaSE 8 API as well as its own light-weight runtime and UI component library that includes support for everything that would expect in a mobile application platform.</p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://www.codenameone.com/javadoc/">the JavaDocs</a> for a full list of supported classes, and check out the source in the <a href="https://github.com/codenameone/CodenameOne">git repository</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The Codename One source is open source.  Released under GPLv2 with Classpath Exception.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Codename One is much more than just an API library.  It provides a full tool-chain and eco-system for developing beautiful, performant native mobile apps with a single codebase in Java and Kotlin.  Please see the <a href="https://www.codenameone.com/developer-guide.html#_introduction">introduction in the Developer guide</a> for a proper overview of Codename One.</p>
+</div>
+<div class="sect2">
+<h3 id="_limitations">Limitations</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">No reflection</dt>
+<dd>
+<p>Codename One apps do not support reflection because reflection makes it impossible to keep app-size down.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kotlin_api_support">Kotlin API Support</h3>
+<div class="paragraph">
+<p>Codename One apps support the [Kotlin Standard Library](<a href="https://kotlinlang.org/api/latest/jvm/stdlib/" class="bare">https://kotlinlang.org/api/latest/jvm/stdlib/</a>).  Kotlin support is still relatively new, so are still discovering which libraries are compatible.  APIs that rely on reflection will not be supported, but most other libraries should work.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_on_libraries">Add-on Libraries</h3>
+<div class="paragraph">
+<p>Add-on libraries can be added to your library in the common/pom.xml file, however, if you use APIs that are not supported by Codename One (e.g. which use reflection), then your app will fail to build.</p>
+</div>
+<div class="paragraph">
+<p>Codename One supports its own library format (cn1lib) which sort of "certifies" that it is compatible with Codename One.  You can browse the growing catalog of available cn1libs inside <a href="#settings">Codename One Settings</a>.</p>
+</div>
+<div class="paragraph">
+<p>For more information about cn1libs, see <a href="https://www.codenameone.com/developer-guide.html#_libraries_cn1lib">the cn1libs section</a> of the developer guide.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-26 06:08:18 -0800
+Last updated 2021-02-26 08:35:44 -0800
 </div>
 </div>
 </body>
