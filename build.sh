@@ -34,7 +34,7 @@ function ios_release {
   "mvn" "package" "-DskipTests" "-Dcodename1.platform=ios" "-Dcodename1.buildTarget=ios-device-release"
 }
 function jar {
-  "case" "mvn" "-Pexecutable-jar" "package" "-Dcodename1.platform=javase" "-DskipTests"
+  "mvn" "-Pexecutable-jar" "package" "-Dcodename1.platform=javase" "-DskipTests"
 }
 function help {
   "echo" "-e" "build.sh [COMMAND]"

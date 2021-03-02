@@ -3,12 +3,46 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="" />
+    <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/netbeans-select-android-config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/netbeans-select-ios-app-config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/netbeans-select-ios-app-debug-config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/netbeans-select-mac-desktop-config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/netbeans-select-windows-config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/netbeans-select-windows-uwp-config.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/codenameone_settings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/codenameone/kotlinexample/ExampleKotlinApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/codenameone/kotlinexample/ExampleKotlinApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting-started.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting-started.adoc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -39,6 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.14306152" />
@@ -49,7 +84,11 @@
       <recent name="$PROJECT_DIR$/common/src/main/kotlin/com/codenameone/kotlinexample" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.Run in Simulator">
+  <component name="RunManager" selected="Maven.Mac Desktop Build">
+    <configuration name="example-kotlin-app-javase-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/javase/target/example-kotlin-app-javase-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="Android Build" type="MavenRunConfiguration" factoryName="Maven" folderName="Build Server">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -145,7 +184,6 @@
             <option name="jreName" value="#USE_PROJECT_JDK" />
             <option name="mavenProperties">
               <map>
-                <entry key="codename1.buildTarget" value="jar" />
                 <entry key="codename1.platform" value="javase" />
               </map>
             </option>
@@ -167,7 +205,9 @@
             </option>
             <option name="pomFileName" />
             <option name="profilesMap">
-              <map />
+              <map>
+                <entry key="executable-jar" value="true" />
+              </map>
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -688,7 +728,13 @@
       <item itemvalue="Maven.Codename One Settings" />
       <item itemvalue="Maven.Run in Simulator" />
       <item itemvalue="Maven.Run as Desktop App" />
+      <item itemvalue="JAR Application.example-kotlin-app-javase-1.0-SNAPSHOT.jar" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.example-kotlin-app-javase-1.0-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -704,41 +750,52 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="604" y="148" width="801" height="672" key="#Project_Structure" timestamp="1614091674781">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="340" y="97" width="801" height="672" key="#Project_Structure/0.25.1440.817@0.25.1440.817" timestamp="1613589576153" />
     <state x="604" y="148" key="#Project_Structure/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614091674781" />
-    <state x="297" y="88" width="1071" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613675369173">
+    <state x="673" y="559" width="1071" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614688427603">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="167" y="63" width="1071" height="779" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.817@0.25.1440.817" timestamp="1613591898592" />
-    <state x="297" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1613675369173" />
+    <state x="673" y="559" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614688427603" />
     <state x="869" y="539" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614091802802">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="869" y="539" key="#com.intellij.fileTypes.FileTypeChooser/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614091802802" />
-    <state width="1857" height="319" key="GridCell.Tab.0.bottom" timestamp="1614091705901">
+    <state width="1857" height="319" key="GridCell.Tab.0.bottom" timestamp="1614688680906">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1400" height="258" key="GridCell.Tab.0.bottom/0.25.1440.817@0.25.1440.817" timestamp="1613592228433" />
-    <state width="1857" height="319" key="GridCell.Tab.0.bottom/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614091705901" />
-    <state width="1857" height="319" key="GridCell.Tab.0.center" timestamp="1614091705900">
+    <state width="1857" height="319" key="GridCell.Tab.0.bottom/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614688680906" />
+    <state width="1857" height="319" key="GridCell.Tab.0.center" timestamp="1614688680904">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1400" height="258" key="GridCell.Tab.0.center/0.25.1440.817@0.25.1440.817" timestamp="1613592228433" />
-    <state width="1857" height="319" key="GridCell.Tab.0.center/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614091705900" />
-    <state width="1857" height="319" key="GridCell.Tab.0.left" timestamp="1614091705899">
+    <state width="1857" height="319" key="GridCell.Tab.0.center/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614688680904" />
+    <state width="1857" height="319" key="GridCell.Tab.0.left" timestamp="1614688680904">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1400" height="258" key="GridCell.Tab.0.left/0.25.1440.817@0.25.1440.817" timestamp="1613592228432" />
-    <state width="1857" height="319" key="GridCell.Tab.0.left/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614091705899" />
-    <state width="1857" height="319" key="GridCell.Tab.0.right" timestamp="1614091705900">
+    <state width="1857" height="319" key="GridCell.Tab.0.left/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614688680904" />
+    <state width="1857" height="319" key="GridCell.Tab.0.right" timestamp="1614688680905">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1400" height="258" key="GridCell.Tab.0.right/0.25.1440.817@0.25.1440.817" timestamp="1613592228433" />
-    <state width="1857" height="319" key="GridCell.Tab.0.right/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614091705900" />
+    <state width="1857" height="319" key="GridCell.Tab.0.right/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1614688680905" />
     <state width="1857" height="258" key="GridCell.Tab.1.bottom" timestamp="1613673760461">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
